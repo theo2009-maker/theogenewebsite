@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Page: faq.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">FAQ</p>
+            <h1>Questions people ask</h1>
+            <p class="lead center">Click a question to see the answer.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container narrow">
+                <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">Are you available for work? <span class="plus">+</span></button><div class="expand-panel"><div><p>Yes, for small projects, internships and teamwork. Send me a message on the Contact page.</p></div></div></article>
+                <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">What are you learning now? <span class="plus">+</span></button><div class="expand-panel"><div><p>Operating system development: bootloaders, the x86 CPU, memory and kernels.</p></div></div></article>
+                <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">Which languages do you speak? <span class="plus">+</span></button><div class="expand-panel"><div><p>Kinyarwanda and English. EDIT this answer to add more.</p></div></div></article>
+                <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">Do you build websites for groups? <span class="plus">+</span></button><div class="expand-panel"><div><p>Yes. A simple information page for a cooperative or a school is a great first project.</p></div></div></article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

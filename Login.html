@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<!-- Page: login.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
+                <a href="login.html" id="accountLink" class="acct-link">Login</a>
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Account</p>
+            <h1>Login or create an account</h1>
+            <p class="lead center">Save your profile and your personal notes.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container narrow auth-box reveal">
+                <div class="tabs">
+                    <button class="tab active" data-tab="login">Login</button>
+                    <button class="tab" data-tab="register">Create account</button>
+                </div>
+
+                <!-- LOGIN form -->
+                <form class="form" id="panel-login">
+                    <input type="email" id="lEmail" placeholder="Your email" required autocomplete="email">
+                    <input type="password" id="lPass" placeholder="Your password" required autocomplete="current-password">
+                    <button type="submit" class="btn">Login</button>
+                    <p class="form-note" id="loginNote"></p>
+                </form>
+
+                <!-- REGISTER form (hidden until the tab is clicked) -->
+                <form class="form" id="panel-register" hidden>
+                    <input type="text" id="rName" placeholder="Your full name" required autocomplete="name">
+                    <input type="email" id="rEmail" placeholder="Your email" required autocomplete="email">
+                    <input type="password" id="rPass" placeholder="Password (minimum 8 characters)" required autocomplete="new-password">
+                    <input type="password" id="rPass2" placeholder="Repeat the password" required autocomplete="new-password">
+                    <button type="submit" class="btn">Create my account</button>
+                    <p class="form-note" id="registerNote"></p>
+                </form>
+
+                <p class="muted small">Your account is saved only in this browser. It is a simple learning version.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script> <!-- account management -->
+</body>
+</html>

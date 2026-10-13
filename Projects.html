@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Page: projects.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
+                <a href="login.html" id="accountLink" class="acct-link">Login</a>
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Projects</p>
+            <h1>Things I have built</h1>
+            <p class="lead center">Use the buttons to filter by type.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container">
+                <div class="filters">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="web">Web</button>
+                    <button class="chip" data-filter="system">Systems</button>
+                </div>
+                <div class="cards">
+                    <article class="expand project" data-cat="web"><button class="expand-btn" aria-expanded="false">💼 This Portfolio Website <span class="plus">+</span></button><div class="expand-panel"><div><p>A multi-page website with dark mode, animated counters and click-to-open sections.</p><p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p></div></div></article>
+                    <article class="expand project" data-cat="system"><button class="expand-btn" aria-expanded="false">💾 My First Bootloader <span class="plus">+</span></button><div class="expand-panel"><div><p>A tiny program that starts when the computer powers on and prints a message on the screen.</p><p class="tags"><span>Assembly</span><span>x86</span><span>QEMU</span></p></div></div></article>
+                    <article class="expand project" data-cat="system"><button class="expand-btn" aria-expanded="false">🧠 Hobby Kernel <span class="plus">+</span></button><div class="expand-panel"><div><p>My course project: a small kernel built step by step through five learning outcomes.</p><p class="tags"><span>C</span><span>Assembly</span><span>GCC</span></p></div></div></article>
+                    <article class="expand project" data-cat="web"><button class="expand-btn" aria-expanded="false">💧 Cooperative Info Page <span class="plus">+</span></button><div class="expand-panel"><div><p>Idea: a simple page where water users see news, meetings and contacts. EDIT this card when it is done.</p><p class="tags"><span>Idea</span><span>Community</span></p></div></div></article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script> <!-- account management -->
+</body>
+</html>

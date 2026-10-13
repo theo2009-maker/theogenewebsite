@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Page: about.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
+                <a href="login.html" id="accountLink" class="acct-link">Login</a>
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">About me</p>
+            <h1>Who is Theogene?</h1>
+            <p class="lead center">Student, learner and builder from Rwanda.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container about-grid">
+                <div class="reveal">
+                    <h2>My story</h2>
+                    <p>I am a student in Rwanda following a TVET Board RQF Level 5 course in
+                       <strong>Hobby Kernel Development</strong>. I am a beginner in systems programming,
+                       but I learn step by step and I practice every day.</p>
+                    <p>I also care about my community. I take part in a water users' cooperative group,
+                       where I learn teamwork, responsibility and how technology can help people.</p>
+                    <a href="contact.html" class="btn">Work with me</a>
+                </div>
+                <div class="stack">
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🎓 Education <span class="plus">+</span></button><div class="expand-panel"><div><p>RQF Level 5: Hobby Kernel Development (CSAHK501). The course uses a 336-page training manual about x86 operating system development in five Learning Outcomes.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🤝 Community <span class="plus">+</span></button><div class="expand-panel"><div><p>Active member of a water users' cooperative group (Zone 2). I help with ideas, organization and teamwork.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🎯 My Goals <span class="plus">+</span></button><div class="expand-panel"><div><p>Understand how a computer starts, write my own small kernel, and build professional websites and software for real people.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">💡 What I believe <span class="plus">+</span></button><div class="expand-panel"><div><p>Hard things become simple when you learn one small step at a time.</p></div></div></article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script> <!-- account management -->
+</body>
+</html>

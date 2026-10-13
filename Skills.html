@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Page: skills.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Skills</p>
+            <h1>What I work with</h1>
+            <p class="lead center">Click any card to see details and my level.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container">
+                <div class="cards">
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🌐 Web Development <span class="plus">+</span></button><div class="expand-panel"><div><p>HTML, CSS and JavaScript to build clean, responsive pages.</p><div class="bar"><i data-level="75"></i></div><small>75%</small></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">⚙️ Systems Programming <span class="plus">+</span></button><div class="expand-panel"><div><p>Learning C, assembly and how a kernel boots on x86 computers.</p><div class="bar"><i data-level="35"></i></div><small>35% (growing every day)</small></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🐍 Python &amp; Automation <span class="plus">+</span></button><div class="expand-panel"><div><p>Small scripts that save time and automate boring tasks.</p><div class="bar"><i data-level="50"></i></div><small>50%</small></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🛠️ Tools <span class="plus">+</span></button><div class="expand-panel"><div><p>VS Code, Git, terminal, QEMU and the GCC cross-compiler.</p><div class="bar"><i data-level="60"></i></div><small>60%</small></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🧠 Problem Solving <span class="plus">+</span></button><div class="expand-panel"><div><p>Breaking a big problem into small steps and solving each one.</p><div class="bar"><i data-level="70"></i></div><small>70%</small></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🤝 Teamwork <span class="plus">+</span></button><div class="expand-panel"><div><p>Working with a cooperative group and sharing ideas.</p><div class="bar"><i data-level="80"></i></div><small>80%</small></div></div></article>
+                </div>
+                <div class="section-head reveal" style="margin-top:3rem">
+                    <h2>Tools I use</h2>
+                </div>
+                <p class="tags center reveal"><span>VS Code</span><span>Git</span><span>GCC</span><span>NASM</span><span>QEMU</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

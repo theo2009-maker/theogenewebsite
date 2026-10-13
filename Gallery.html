@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Page: gallery.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
+                <a href="login.html" id="accountLink" class="acct-link">Login</a>
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Gallery</p>
+            <h1>Pictures</h1>
+            <p class="lead center">Click a picture to enlarge it. EDIT: later put real photos here.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container gallery">
+                <button class="tile reveal" data-caption="My coding desk"><span>💻</span><em>My coding desk</em></button>
+                <button class="tile reveal" data-caption="Testing my kernel"><span>🧪</span><em>Testing my kernel</em></button>
+                <button class="tile reveal" data-caption="Cooperative meeting"><span>💧</span><em>Cooperative meeting</em></button>
+                <button class="tile reveal" data-caption="Studying the manual"><span>📚</span><em>Studying the manual</em></button>
+                <button class="tile reveal" data-caption="Rwanda"><span>🌍</span><em>Rwanda</em></button>
+                <button class="tile reveal" data-caption="Next goals"><span>🚀</span><em>Next goals</em></button>
+            </div>
+        </section>
+
+        <!-- Big picture window (opened by script.js) -->
+        <div class="lightbox" id="lightbox"><div class="lb-box"><span id="lbIcon"></span><p id="lbCaption"></p><small>Click anywhere to close</small></div></div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script> <!-- account management -->
+</body>
+</html>

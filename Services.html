@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Page: services.html | Website of Theogene Niyonzima -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Theogene Niyonzima</title>
+    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Theogene<span>.</span></a>
+
+            <nav class="nav" id="nav" aria-label="Main menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+
+                <!-- "More" opens a small list with the other pages -->
+                <div class="dropdown" id="dropdown">
+                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
+                    <div class="drop-menu">
+                        <a href="journey.html">Journey</a>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
+                <a href="login.html" id="accountLink" class="acct-link">Login</a>
+                <a href="contact.html" class="btn btn-small">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Services</p>
+            <h1>How I can help</h1>
+            <p class="lead center">Simple, honest work. Click a card for details.</p>
+        </div>
+    </section>
+        <section class="section">
+            <div class="container">
+                <div class="cards">
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🌐 Website Design <span class="plus">+</span></button><div class="expand-panel"><div><p>A clean, fast website for a person, a school, a small business or a group. Works on phones too.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">📄 Information Pages <span class="plus">+</span></button><div class="expand-panel"><div><p>Simple pages for news, meetings and contacts, for example for a cooperative.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🐍 Automation Scripts <span class="plus">+</span></button><div class="expand-panel"><div><p>Small Python scripts that do boring work for you, like renaming files or sorting data.</p></div></div></article>
+                    <article class="expand reveal" ><button class="expand-btn" aria-expanded="false">🎓 Tutoring <span class="plus">+</span></button><div class="expand-panel"><div><p>I explain computer basics, HTML and CSS in simple language, step by step.</p></div></div></article>
+                </div>
+                <div class="cta reveal" style="margin-top:3rem">
+                    <h2>Need one of these?</h2>
+                    <a href="contact.html" class="btn">Ask for a quote</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">Theogene<span>.</span></a>
+                <p>Building better digital experiences.</p>
+            </div>
+            <div class="foot-links">
+                <a href="about.html">About</a><a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a><a href="services.html">Services</a>
+                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script> <!-- account management -->
+</body>
+</html>
