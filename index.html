@@ -1,136 +1,27 @@
 <!DOCTYPE html>
-<!-- Page: index.html | Website of Theogene Niyonzima -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Theogene Niyonzima</title>
-    <meta name="description" content="Portfolio of Theogene Niyonzima, student and developer from Rwanda.">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TheogeneNiyonzima — Buy smart. Sell better.</title>
+<meta name="description" content="Buy and sell phones, computers, audio, gaming and electronics in Rwanda. TheogeneNiyonzima by TheogeneNiyonzima. Prices in Rwandan francs.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/market.css"><script type="module" src="/market.js"></script>
 </head>
 <body>
-    <div class="progress" id="progress"></div>
-
-    <!-- ===== HEADER: the menu. Each link opens a different page ===== -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">Theogene<span>.</span></a>
-
-            <nav class="nav" id="nav" aria-label="Main menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="services.html">Services</a>
-
-                <!-- "More" opens a small list with the other pages -->
-                <div class="dropdown" id="dropdown">
-                    <button class="drop-btn" id="dropBtn" aria-expanded="false">More ▾</button>
-                    <div class="drop-menu">
-                        <a href="journey.html">Journey</a>
-                        <a href="certificates.html">Certificates</a>
-                        <a href="gallery.html">Gallery</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </div>
-
-                <!-- Shows "Login", or the user's name after login (auth.js changes it) -->
-                <a href="login.html" id="accountLink" class="acct-link">Login</a>
-                <a href="contact.html" class="btn btn-small">Contact</a>
-            </nav>
-
-            <div class="header-actions">
-                <button class="icon-btn" id="themeToggle" aria-label="Change theme">🌓</button>
-                <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-            </div>
-        </div>
-    </header>
-
-    <main>
-
-        <!-- ===== HERO ===== -->
-        <section class="hero" id="home">
-            <div class="container hero-grid">
-                <div class="hero-text reveal">
-                    <p class="eyebrow">👋 Hello, I am</p>
-                    <h1>Theogene <span class="gradient">Niyonzima</span></h1>
-                    <h2 class="typing">I am a <span id="typed"></span><span class="cursor">|</span></h2>
-                    <p class="lead">
-                        I build websites and I am learning how computers work from the inside:
-                        operating systems, kernels and low-level programming.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="projects.html" class="btn">View my work</a>
-                        <a href="contact.html" class="btn btn-outline">Contact me</a>
-                    </div>
-                </div>
-                <div class="hero-card reveal">
-                    <div class="code-window">
-                        <div class="dots"><i></i><i></i><i></i></div>
-                        <pre><code><span class="c">// my story in code</span>
-<span class="k">const</span> me = {
-  name:  <span class="s">"Theogene Niyonzima"</span>,
-  from:  <span class="s">"Rwanda 🇷🇼"</span>,
-  study: <span class="s">"Hobby Kernel Development"</span>,
-  goal:  <span class="s">"Build great software"</span>
-};</code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== COUNTERS (EDIT data-target to change the numbers) ===== -->
-        <section class="stats">
-            <div class="container stats-grid">
-                <div class="stat reveal"><strong class="counter" data-target="5">0</strong><span>Learning Outcomes</span></div>
-                <div class="stat reveal"><strong class="counter" data-target="336">0</strong><span>Manual Pages Studied</span></div>
-                <div class="stat reveal"><strong class="counter" data-target="10">0</strong><span>Projects Built</span></div>
-                <div class="stat reveal"><strong class="counter" data-target="100" data-suffix="%">0</strong><span>Passion for Learning</span></div>
-            </div>
-        </section>
-
-        <!-- ===== OPTIONS: click a card to open another page ===== -->
-        <section class="section alt">
-            <div class="container">
-                <div class="section-head reveal">
-                    <p class="eyebrow">Explore</p>
-                    <h2>Choose where you want to go</h2>
-                    <p class="muted">Click any option to open its page.</p>
-                </div>
-                <div class="options"><a href="about.html" class="option reveal"><span class="o-icon">👤</span><h3>About me</h3><p>Who I am, my school and my community.</p><span class="o-go">Open →</span></a><a href="skills.html" class="option reveal"><span class="o-icon">🛠️</span><h3>Skills</h3><p>What I can do. Click to see my levels.</p><span class="o-go">Open →</span></a><a href="projects.html" class="option reveal"><span class="o-icon">💼</span><h3>Projects</h3><p>Websites and systems I have built.</p><span class="o-go">Open →</span></a><a href="services.html" class="option reveal"><span class="o-icon">🧩</span><h3>Services</h3><p>How I can help you or your group.</p><span class="o-go">Open →</span></a><a href="journey.html" class="option reveal"><span class="o-icon">🗺️</span><h3>Journey</h3><p>My learning path step by step.</p><span class="o-go">Open →</span></a><a href="certificates.html" class="option reveal"><span class="o-icon">🏅</span><h3>Certificates</h3><p>My training and achievements.</p><span class="o-go">Open →</span></a><a href="gallery.html" class="option reveal"><span class="o-icon">🖼️</span><h3>Gallery</h3><p>Pictures of my work and activities.</p><span class="o-go">Open →</span></a><a href="blog.html" class="option reveal"><span class="o-icon">📝</span><h3>Blog</h3><p>Simple notes about what I learn.</p><span class="o-go">Open →</span></a><a href="faq.html" class="option reveal"><span class="o-icon">❓</span><h3>FAQ</h3><p>Quick answers to common questions.</p><span class="o-go">Open →</span></a><a href="contact.html" class="option reveal"><span class="o-icon">✉️</span><h3>Contact</h3><p>Send me a message.</p><span class="o-go">Open →</span></a></div>
-            </div>
-        </section>
-
-        <!-- ===== CALL TO ACTION ===== -->
-        <section class="section">
-            <div class="container cta reveal">
-                <h2>Have an idea or a project?</h2>
-                <p>Let us build something useful together.</p>
-                <a href="contact.html" class="btn">Start a conversation</a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div>
-                <a href="index.html" class="logo">Theogene<span>.</span></a>
-                <p>Building better digital experiences.</p>
-            </div>
-            <div class="foot-links">
-                <a href="about.html">About</a><a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a><a href="services.html">Services</a>
-                <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <p class="copy">© <span id="year"></span> Theogene Niyonzima. All rights reserved.</p>
-    </footer>
-
-    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
-    <script src="script.js"></script>
-    <script src="auth.js"></script> <!-- account management -->
-</body>
-</html>
+<div class="topline"><div class="wrap"><span>Good tech deserves a second story.</span><span>Made for Rwanda <i></i> Prices in RWF</span></div></div>
+<header><div class="wrap header-inner"><a class="brand" href="/" aria-label="TheogeneNiyonzima home"><span class="brand-icon">TN</span><span class="brand-name">TheogeneNiyonzima<span class="brand-sub">ELECTRONICS</span></span></a><nav aria-label="Main navigation"><a href="#shop" class="nav-active">Marketplace</a><button data-open="sell">Add product</button><button data-owner="true">Owner / Admin</button></nav><div class="header-actions"><button class="account-button" id="account-button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0114 0v2"/></svg><span>My account</span></button><button class="button button-dark small" data-open="sell">Add product <span>↗</span></button></div></div></header>
+<main>
+<section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><span class="dot"></span> YOUR NEXT UPGRADE STARTS HERE</div><h1>Great tech.<br>Better prices.<br><span>More possibilities.</span></h1><p>A new phone. A smarter workspace. A fresh start for your old device. Buy and sell electronics, all in one place.</p><div class="hero-actions"><a class="button button-dark" href="#shop">Explore the marketplace <span>↗</span></a><button class="text-button" data-open="sell">Have something to sell? <span>→</span></button></div><div class="hero-note"><span class="round-icon">✓</span><span>New & pre-owned devices</span><span class="divider"></span><span>Local buyers. Local sellers.</span></div></div><div class="hero-visual"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="visual-label">THE UPGRADE EDIT / 01</span><img class="hero-headphones" src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=85" alt="Premium over-ear headphones on a warm background" fetchpriority="high"><div class="floating-tag"><span class="round-icon dark">↗</span><span>Less spending.<br><strong>More discovering.</strong></span></div><div class="visual-bottom"><span>TECH THAT FITS YOUR LIFE.</span><span>↗</span></div></div></section>
+<div class="benefit-bar wrap"><div><span class="line-icon">◇</span><span><strong>One marketplace. More choice.</strong><small>From everyday essentials to your next upgrade</small></span></div><div><span class="line-icon">↔</span><span><strong>Buy it. Sell it. Keep it moving.</strong><small>Give good devices a longer life</small></span></div><div><span class="line-icon">◎</span><span><strong>Pay the local way</strong><small>MTN MoMo & Airtel Money transfers</small></span></div></div>
+<section class="section wrap" id="shop"><div class="section-heading"><div><div class="eyebrow">FIND YOUR KIND OF TECH</div><h2>A little browsing.<br>A great find.</h2></div><p>From big upgrades to small essentials.<br>Discover what’s next for you.</p></div>
+<form class="search-form" id="search-form" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" aria-label="Search products" placeholder="Search phones, laptops, headphones and more…"><button class="button button-dark small" type="submit">Search <span>→</span></button></form>
+<div class="category-tabs" id="categories" aria-label="Product categories"><button class="active" data-category="All">All devices <span>↗</span></button><button data-category="Phones">Phones</button><button data-category="Computers">Computers</button><button data-category="Audio">Audio</button><button data-category="Gaming">Gaming</button><button data-category="Accessories">Accessories</button><button data-category="Home electronics">Home electronics</button></div>
+<div class="catalog-toolbar"><span id="result-count" role="status">Loading the marketplace…</span><label>Sort by <select id="sort" aria-label="Sort products"><option value="newest">Newest first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div><div id="catalog-note" class="catalog-note" hidden></div><div class="product-grid" id="products" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+</section>
+<section class="sell-banner wrap"><div><div class="eyebrow">YOUR OLD TECH. SOMEONE’S NEXT FIND.</div><h2>That device in your drawer?<br>Give it a new beginning.</h2><p>Make room for your next upgrade. List your device and connect with buyers across Rwanda.</p><button class="button button-lime" data-open="sell">Start selling <span>↗</span></button></div><div class="sell-art" aria-hidden="true"><div class="phone phone-back"><div class="camera"><i></i><i></i><i></i></div><div class="phone-mark">TN</div></div><div class="phone phone-front"><div class="phone-notch"></div><span>HELLO,<br>AGAIN.</span><div class="phone-circle"></div></div><span class="reuse-tag">A little less waste.<br>A lot more possibility.</span></div></section>
+<section class="section wrap" id="how-it-works"><div class="section-heading"><div><div class="eyebrow">SIMPLE FROM THE START</div><h2>Good tech. No guesswork.</h2></div><button class="text-button" id="payment-help">About mobile money <span>↗</span></button></div><div class="steps"><article><span class="step-number">01 / DISCOVER</span><h3>Find the right fit.</h3><p>Explore new and pre-owned devices. Compare the condition, price, and seller’s description.</p></article><article><span class="step-number">02 / CONNECT</span><h3>Make it yours.</h3><p>Sign in, reserve a device, and coordinate collection or delivery directly with the seller.</p></article><article><span class="step-number">03 / PAY LOCALLY</span><h3>Pay. Confirm. Enjoy.</h3><p>Use MTN MoMo or Airtel Money. Submit your transaction reference for the seller to verify.</p></article></div></section>
+<section class="founder wrap"><span class="founder-monogram">TN.</span><div><div class="eyebrow">BUILT WITH A LOCAL POINT OF VIEW</div><h2>Technology brings us together.</h2><p>“I’m creating a place where finding your next device and giving your old one a new home belong together.”</p><strong>TheogeneNiyonzima</strong><span class="founder-title">Founder, TheogeneNiyonzima · Rwanda</span></div><span class="founder-arrow" aria-hidden="true">↗</span></section>
+</main>
+<footer><div class="wrap footer-main"><a class="brand" href="/">TheogeneNiyonzima<span class="brand-sub">ELECTRONICS</span></a><p>A better way to find your next device.<br>Buy smart. Sell better.</p><div><a href="#shop">Shop devices</a><button data-open="sell">Become a seller</button><button id="footer-account">My account</button><button data-owner="true">Owner / Admin control</button></div><div><button id="footer-help">Payment & safety</button><a href="/management.html">Owner’s guide</a><a href="#how-it-works">How it works</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> TheogeneNiyonzima. All rights reserved.</span><span>Rwanda <i></i> RWF</span></div></footer>
+<dialog id="modal"><div class="modal-top"><span class="eyebrow">TheogeneNiyonzima</span><button id="close-modal" aria-label="Close dialog">×</button></div><div id="modal-body"></div></dialog><div class="toast" id="toast" role="status" hidden></div>
+</body></html>
